@@ -1,7 +1,7 @@
 class Solution {
     public int singleNumber(int[] nums) {
         HashMap<Integer,Integer>map=new HashMap<>();
-        int k=0;
+      
         for(int i=0;i<nums.length;i++)
         {
             if(map.containsKey(nums[i]))
@@ -12,9 +12,9 @@ class Solution {
         for(int i=0;i<nums.length;i++)
         {
             if(map.get(nums[i])==1)
-              k= nums[i];
+              return nums[i];
         }
-           return k;
+           return 0;
         
     }
 }
