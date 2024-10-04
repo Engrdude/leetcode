@@ -9,7 +9,7 @@ class Solution {
         }
 
         
-        int rem = sum % p;
+        int rem = sum;
         if (rem == 0) {
             return 0;  
         }
